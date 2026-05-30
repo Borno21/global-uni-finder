@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Global Uni Finder</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="country.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#countries">Countries</a>
+        <a href="faculties.html">Faculties</a>
+        <a href="requirements.html">Requirements</a>
+        <a href="scholarships.html">Scholarships</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="contact-hero">
+
+        <div class="contact-hero-content">
+
+            <h1>Contact Us</h1>
+
+            <p>
+                Submit your study interest form.
+                We will use this information to guide you about countries,
+                universities, scholarships and admission requirements.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <div class="contact-left-card">
+
+                <h2>Get Study Guidance</h2>
+
+                <p class="contact-text">
+                    Fill out the form with correct information.
+                    Later, this form can connect with XAMPP and MySQL.
+                </p>
+
+                <div class="contact-detail">
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>globalunifinder@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+880 1234******</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        <h3>Location</h3>
+                        <p>Rajshahi, Bangladesh</p>
+                    </div>
+                </div>
+
+                <div class="contact-note">
+                    <h3>Why this form?</h3>
+
+                    <p>
+                        This form collects the basic information needed
+                        for university and scholarship guidance.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="form-card">
+
+                <h2>Student Interest Form</h2>
+
+                <form action="../submit_form.php" method="POST">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="full_name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Current Education</label>
+
+                            <select name="current_education" required>
+                                <option value="">Select education level</option>
+                                <option value="HSC / A Level">HSC / A Level</option>
+                                <option value="Diploma">Diploma</option>
+                                <option value="Bachelor">Bachelor</option>
+                                <option value="Master">Master</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label>Preferred Country</label>
+
+                            <select name="preferred_country" required>
+                                <option value="">Select country</option>
+                                <option value="Australia">Australia</option>
+                                <option value="USA">USA</option>
+                                <option value="UK">UK</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Canada">Canada</option>
+                                <option value="New Zealand">New Zealand</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Preferred Faculty</label>
+
+                            <select name="preferred_faculty" required>
+                                <option value="">Select faculty</option>
+                                <option value="Computer Science">Computer Science</option>
+                                <option value="Engineering">Engineering</option>
+                                <option value="Business">Business</option>
+                                <option value="Medicine">Medicine</option>
+                                <option value="Nursing">Nursing</option>
+                                <option value="Cyber Security">Cyber Security</option>
+                                <option value="Data Science">Data Science</option>
+                                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label>Study Level</label>
+
+                            <select name="study_level" required>
+                                <option value="">Select study level</option>
+                                <option value="Bachelor">Bachelor</option>
+                                <option value="Master">Master</option>
+                                <option value="PhD">PhD</option>
+                                <option value="Diploma">Diploma</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>English Test Score</label>
+                            <input type="text" name="english_score" placeholder="Example: IELTS 6.5 or Not yet">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Estimated Budget</label>
+
+                        <select name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="Below 10 lakh BDT">Below 10 lakh BDT</option>
+                            <option value="10-20 lakh BDT">10-20 lakh BDT</option>
+                            <option value="20-30 lakh BDT">20-30 lakh BDT</option>
+                            <option value="30 lakh+ BDT">30 lakh+ BDT</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" placeholder="Write your question here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Submit Information
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
