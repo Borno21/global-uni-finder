@@ -39,3 +39,48 @@ cards.forEach(function (card) {
         card.style.transform = "translateY(0) rotateX(0) rotateY(0)";
     });
 });
+
+// ── Search functionality ─────────────────────────────────────────────────────
+
+const countryCards = document.querySelectorAll('.country-card');
+
+function searchCards(query) {
+    const q = query.toLowerCase().trim();
+
+    countryCards.forEach(function (card) {
+        const name = card.querySelector('h3').textContent.toLowerCase();
+        const desc = card.querySelector('p').textContent.toLowerCase();
+
+        if (q === '' || name.includes(q) || desc.includes(q)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+
+    if (q !== '') {
+        document.getElementById('countries').scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// Header search box
+const headerInput = document.querySelector('.search-box input');
+const headerIcon = document.querySelector('.search-box i');
+
+headerInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') searchCards(this.value);
+});
+headerIcon.addEventListener('click', function () {
+    searchCards(headerInput.value);
+});
+
+// Quick search section
+const mainInput = document.querySelector('.main-search input');
+const mainBtn = document.querySelector('.main-search button');
+
+mainInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') searchCards(this.value);
+});
+mainBtn.addEventListener('click', function () {
+    searchCards(mainInput.value);
+});

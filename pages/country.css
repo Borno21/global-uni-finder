@@ -8,7 +8,7 @@
     rgba(0,0,0,0.45),
     rgba(0,0,0,0.45)
     ),
-    url("../Image/intro.jpg");
+    url("../Image/intro.png");
 
     background-size:cover;
     background-position:center;
@@ -618,6 +618,27 @@
 .form-card h2{
     color:#006b55;
 }
+/* // */
+
+.form-alert {
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: none;
+}
+.form-alert.success {
+    background: #d1fae5;
+    color: #065f46;
+    border-left: 4px solid #10b981;
+}
+.form-alert.error {
+    background: #fee2e2;
+    color: #991b1b;
+    border-left: 4px solid #ef4444;
+}
+/* // */
 
 .contact-text{
     line-height:1.8;

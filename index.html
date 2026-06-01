@@ -1,247 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Uni Finder</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Global Uni Finder</title>
 
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <!-- Icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
+        <!-- Google Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
 
-<body>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+            rel="stylesheet">
 
-    <!-- Header -->
-    <header class="header">
-        <div class="top-header">
-            <div class="logo">
-                <h1>GLOBAL <span>UNI FINDER</span></h1>
-                <p>Find universities, scholarships and study options</p>
-            </div>
+    </head>
 
-            <div class="top-actions">
-                <div class="search-box">
-                    <input type="text" placeholder="Search university...">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+    <body>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="top-header">
+                <div class="logo">
+                    <h1>GLOBAL <span>UNI FINDER</span></h1>
+                    <p>Find universities, scholarships and study options</p>
                 </div>
 
-                <div class="language">
-                    <i class="fa-solid fa-globe"></i>
-                    <span>English</span>
-                </div>
-            </div>
-        </div>
+                <div class="top-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search country or university...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
 
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="#countries">Countries</a>
-            <a href="pages/faculties.html">Faculties</a>
-            <a href="pages/requirements.html">Requirements</a>
-            <a href="pages/scholarships.html">Scholarships</a>
-            <a href="pages/contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Study Abroad With Confidence</h2>
-            <p> Discover top universities, scholarships, admission requirements and study opportunities across Australia, Canada, USA, UK, Germany, Japan and New Zealand.
-</p>
-            <div class="hero-buttons">
-                <a href="#countries" class="btn primary-btn">Explore Countries</a>
-                <a href="pages/scholarships.html" class="btn secondary-btn">Find Scholarships</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Search Section -->
-    <section class="quick-search">
-        <div class="tabs">
-            <button>Courses</button>
-            <button>Universities</button>
-            <button>Scholarships</button>
-            <button>Careers</button>
-        </div>
-
-        <div class="main-search">
-            <input type="text" placeholder="Search Computer Science, MBA, Nursing, Engineering...">
-            <button>Search</button>
-        </div>
-    </section>
-
-    <!-- Why Choose Section -->
-    <section class="why-section">
-        <h2>Why Choose Global Uni Finder?</h2>
-
-        <div class="why-container">
-            <div class="why-card">
-                <i class="fa-solid fa-building-columns"></i>
-                <h3>100+ Top Universities</h3>
-                <p>Explore trusted universities from seven popular countries.</p>
-            </div>
-
-            <div class="why-card">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <h3>Scholarship Information</h3>
-                <p>Find government, university and merit-based scholarships.</p>
-            </div>
-
-            <div class="why-card">
-                <i class="fa-solid fa-list-check"></i>
-                <h3>Clear Requirements</h3>
-                <p>Check IELTS, GPA, tuition fees and admission conditions.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Countries Section -->
-    <section class="countries-section" id="countries">
-        <h2>Explore Study Destinations</h2>
-        <p class="section-subtitle">Choose a country and explore universities, faculties, scholarships and requirements.</p>
-
-        <div class="country-grid">
-
-            <div class="country-card">
-                <img src="Image/australia.jpg" alt="Australia">
-                <div class="country-info">
-                    <h3>Australia</h3>
-                    <p>Popular for quality education, scholarships and student work rights.</p>
-                    <div class="card-links">
-                        <a href="pages/australia.html">Universities</a>
-                        <a href="pages/faculties.html">Faculties</a>
-                        <a href="pages/requirements.html">Requirements</a>
+                    <div class="language">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>English</span>
                     </div>
                 </div>
             </div>
 
-            <div class="country-card">
-                <img src="Image/usa.jpg" alt="USA">
-                <div class="country-info">
-                    <h3>United States</h3>
-                    <p>Home to world-famous universities and strong research facilities.</p>
-                    <div class="card-links">
-                        <a href="pages/usa.html">Universities</a>
-                        <a href="pages/faculties.html">Faculties</a>
-                        <a href="pages/scholarships.html">Scholarships</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="country-card">
-                <img src="Image/uk.jpg" alt="UK">
-                <div class="country-info">
-                    <h3>United Kingdom</h3>
-                    <p>Known for short degree duration and globally respected universities.</p>
-                    <div class="card-links">
-                        <a href="pages/uk.html">Universities</a>
-                        <a href="pages/faculties.html">Faculties</a>
-                        <a href="pages/requirements.html">Requirements</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="country-card">
-                <img src="Image/germany.jpg" alt="Germany">
-                <div class="country-info">
-                    <h3>Germany</h3>
-                    <p>Great choice for engineering, research and low tuition options.</p>
-                    <div class="card-links">
-                        <a href="pages/germany.html">Universities</a>
-                        <a href="pages/faculties.html">Faculties</a>
-                        <a href="pages/scholarships.html">Scholarships</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="country-card">
-                <img src="Image/japan.webp" alt="Japan">
-                <div class="country-info">
-                    <h3>Japan</h3>
-                    <p>Best for technology, robotics, engineering and cultural experience.</p>
-                    <div class="card-links">
-                        <a href="pages/japan.html">Universities</a>
-                        <a href="pages/faculties.html">Faculties</a>
-                        <a href="pages/requirements.html">Requirements</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="country-card">
-                <img src="Image/canada.jpg" alt="Canada">
-                <div class="country-info">
-                    <h3>Canada</h3>
-                    <p>Popular for international students, research and career pathways.</p>
-                    <div class="card-links">
-                        <a href="pages/canada.html">Universities</a>
-                        <a href="pages/faculties.html">Faculties</a>
-                        <a href="pages/scholarships.html">Scholarships</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="country-card">
-                <img src="Image/new zealand.jpg" alt="New Zealand">
-                <div class="country-info">
-                    <h3>New Zealand</h3>
-                    <p>Safe, peaceful and student-friendly country with good education.</p>
-                    <div class="card-links">
-                        <a href="pages/newzealand.html">Universities</a>
-                        <a href="pages/faculties.html">Faculties</a>
-                        <a href="pages/requirements.html">Requirements</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Featured Section -->
-    <section class="feature-section">
-        <div class="feature-box">
-            <h2>Find the Right University for Your Future</h2>
-            <p>Compare countries, check scholarships, understand admission requirements and choose the best study path.</p>
-            <a href="pages/contact.html" class="btn primary-btn">Get Guidance</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <h2>Global Uni Finder</h2>
-            <p>Your simple guide for international university search.</p>
-
-            <div class="footer-links">
+            <nav class="navbar">
                 <a href="index.html">Home</a>
                 <a href="#countries">Countries</a>
+                <a href="pages/faculties.html">Faculties</a>
+                <a href="pages/requirements.html">Requirements</a>
                 <a href="pages/scholarships.html">Scholarships</a>
                 <a href="pages/contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Study Abroad With Confidence</h2>
+                <p> Discover top universities, scholarships, admission
+                    requirements and study opportunities across Australia,
+                    Canada, USA, UK, Germany, Japan and New Zealand.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#countries" class="btn primary-btn">Explore
+                        Countries</a>
+                    <a href="pages/scholarships.html"
+                        class="btn secondary-btn">Find Scholarships</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="quick-search">
+            <div class="tabs">
+                <button>Courses</button>
+                <button>Universities</button>
+                <button>Scholarships</button>
+                <button>Careers</button>
             </div>
 
-            <p class="copyright">
-© 2026 Global Uni Finder. All Rights Reserved.
-</p>
+            <div class="main-search">
+                <input type="text"
+                    placeholder="Search Computer Science, MBA, Nursing, Engineering...">
+                <button>Dev Note: Upcoming..</button>
+            </div>
+        </section>
 
-<p class="creator">
-Website Designed & Developed by
-<b>Navid Anjum Borno</b><br>
-Database Design & MySQL Integration by
-<b>Sayon Hemron & MD. Saiyadil Murshalin</b> <br>
-</p>
+        <!-- Why Choose Section -->
+        <section class="why-section">
+            <h2>Why Choose Global Uni Finder?</h2>
 
-<p class="creator-email">
-Contact:
-naborno2003@gmail.com
-</p>
-        </div>
-    </footer>
+            <div class="why-container">
+                <div class="why-card">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h3>100+ Top Universities</h3>
+                    <p>Explore trusted universities from seven popular
+                        countries.</p>
+                </div>
 
-    <script src="script.js"></script>
+                <div class="why-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Scholarship Information</h3>
+                    <p>Find government, university and merit-based
+                        scholarships.</p>
+                </div>
 
-</body>
+                <div class="why-card">
+                    <i class="fa-solid fa-list-check"></i>
+                    <h3>Clear Requirements</h3>
+                    <p>Check IELTS, GPA, tuition fees and admission
+                        conditions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countries Section -->
+        <section class="countries-section" id="countries">
+            <h2>Explore Study Destinations</h2>
+            <p class="section-subtitle">Choose a country and explore
+                universities, faculties, scholarships and requirements.</p>
+
+            <div class="country-grid">
+
+                <div class="country-card">
+                    <img src="Image/australia2.jpg" alt="Australia">
+                    <div class="country-info">
+                        <h3>Australia</h3>
+                        <p>Popular for quality education, scholarships and
+                            student work rights.</p>
+                        <div class="card-links">
+                            <a href="pages/australia.html">Universities</a>
+                            <a href="pages/faculties.html">Faculties</a>
+                            <a href="pages/requirements.html">Requirements</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Image/usa.jpg" alt="USA">
+                    <div class="country-info">
+                        <h3>United States</h3>
+                        <p>Home to world-famous universities and strong research
+                            facilities.</p>
+                        <div class="card-links">
+                            <a href="pages/usa.html">Universities</a>
+                            <a href="pages/faculties.html">Faculties</a>
+                            <a href="pages/scholarships.html">Scholarships</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Image/uk.jpg" alt="UK">
+                    <div class="country-info">
+                        <h3>United Kingdom</h3>
+                        <p>Known for short degree duration and globally
+                            respected universities.</p>
+                        <div class="card-links">
+                            <a href="pages/uk.html">Universities</a>
+                            <a href="pages/faculties.html">Faculties</a>
+                            <a href="pages/requirements.html">Requirements</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Image/germany.jpg" alt="Germany">
+                    <div class="country-info">
+                        <h3>Germany</h3>
+                        <p>Great choice for engineering, research and low
+                            tuition options.</p>
+                        <div class="card-links">
+                            <a href="pages/germany.html">Universities</a>
+                            <a href="pages/faculties.html">Faculties</a>
+                            <a href="pages/scholarships.html">Scholarships</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Image/japan.webp" alt="Japan">
+                    <div class="country-info">
+                        <h3>Japan</h3>
+                        <p>Best for technology, robotics, engineering and
+                            cultural experience.</p>
+                        <div class="card-links">
+                            <a href="pages/japan.html">Universities</a>
+                            <a href="pages/faculties.html">Faculties</a>
+                            <a href="pages/requirements.html">Requirements</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Image/canada.jpg" alt="Canada">
+                    <div class="country-info">
+                        <h3>Canada</h3>
+                        <p>Popular for international students, research and
+                            career pathways.</p>
+                        <div class="card-links">
+                            <a href="pages/canada.html">Universities</a>
+                            <a href="pages/faculties.html">Faculties</a>
+                            <a href="pages/scholarships.html">Scholarships</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Image/new zealand.jpg" alt="New Zealand">
+                    <div class="country-info">
+                        <h3>New Zealand</h3>
+                        <p>Safe, peaceful and student-friendly country with good
+                            education.</p>
+                        <div class="card-links">
+                            <a href="pages/newzealand.html">Universities</a>
+                            <a href="pages/faculties.html">Faculties</a>
+                            <a href="pages/requirements.html">Requirements</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="feature-section">
+            <div class="feature-box">
+                <h2>Find the Right University for Your Future</h2>
+                <p>Compare countries, check scholarships, understand admission
+                    requirements and choose the best study path.</p>
+                <a href="pages/contact.html" class="btn primary-btn">Get
+                    Guidance</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h2>Global Uni Finder</h2>
+                <p>Your simple guide for international university search.</p>
+
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="#countries">Countries</a>
+                    <a href="pages/scholarships.html">Scholarships</a>
+                    <a href="pages/contact.html">Contact</a>
+                </div>
+
+                
+                <p class="creator">
+                    Website Designed & Developed by <br>
+                    <b id="member">Navid Anjum Borno</b><br>
+                    Database Design & MySQL Integration by <br>
+                    <b id="member">Sayon Hemrom & MD. Saiyadil Murshalin</b>
+                    <br>
+                </p>
+                
+                Contact: 
+                <div class="creator-email">
+                    <p id="member-email">naborno2003@gmail.com</p>
+                    <p id="member-email">siamvu117@gmail.com</p>
+                    <p id="member-email">mr.sayon@gmail.com</p>
+                </div>
+                
+                <p class="copyright">
+                    © 2026 Global Uni Finder. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
 </html>

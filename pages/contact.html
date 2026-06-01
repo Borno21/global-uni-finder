@@ -16,6 +16,23 @@
 
 </head>
 
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const status = params.get('status');
+
+    if (status === 'success') {
+        const el = document.getElementById('successAlert');
+        el.style.display = 'block';
+        el.scrollIntoView({ behavior: 'smooth' });
+    } else if (status === 'error') {
+        const el = document.getElementById('errorAlert');
+        const msg = params.get('msg');
+        if (msg) document.getElementById('errorMsg').textContent = decodeURIComponent(msg);
+        el.style.display = 'block';
+        el.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
 <body>
 
     <nav class="navbar">
@@ -61,7 +78,7 @@
 
                     <div>
                         <h3>Email</h3>
-                        <p>globalunifinder@gmail.com</p>
+                        <p>naborno2003@gmail.com</p>
                     </div>
                 </div>
 
@@ -98,7 +115,14 @@
 
                 <h2>Student Interest Form</h2>
 
-                <form action="../submit_form.php" method="POST">
+                <div class="form-alert success" id="successAlert">
+                    ✅ Your information has been submitted successfully! We will contact you soon.
+                </div>
+                <div class="form-alert error" id="errorAlert">
+                    ❌ <span id="errorMsg">Something went wrong. Please try again.</span>
+                </div>
+
+                <form action="../database/submit_form.php" method="POST">
 
                     <div class="form-row">
 
